@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Etch A Sketch</title>
+        <link rel="stylesheet" href="./style.css"></link>
+        <script src="./script.js" defer></script>
+    </head>
+
+    <body>
+        <div class="title">Etch A Sketch</div>
+
+        <div class="content">
+            <div id="selections" class="side-panel">
+                <label id="color-picker" for="label-color">COLOR - 
+                    <input type="color" id="label-color" value="#000000">
+                </label>
+
+                <div class="btns">
+                    <button id="color-option" class="mode"><i>RAINBOW</i></button>
+                    <button id="opacity-option" class="mode"><i>TRANSPARENT</i></button>
+                    <button id="hover-option" class="mode"><i>HOVER</i></button>
+                    <button id="erase-btn"><i>ERASE</i></button>
+                    <button id="clear-btn"><i>CLEAR</i></button>
+                    <button id="visibility-option" class="mode"><i>HIDE GRID</i></button>
+                </div>
+
+                <div id="gird-size-slider">
+                    <div id="size-text"></div>
+                    <input type="range" min="1" max="100" value="16" class="slider">
+                </div>
+            </div>
+
+            <div id="grid-container">
+            </div>
+
+            <div id="other" class="side-panel"></div>
+        </div>
+    </body>
+</html>
